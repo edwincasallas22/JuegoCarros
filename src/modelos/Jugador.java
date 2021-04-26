@@ -1,12 +1,10 @@
+package modelos;
+
 public class Jugador {
 
-    private String nombre;
+    String nombre;
 
-    public Jugador(){
-
-    }
-
-    public Jugador(String nombre){
+    public Jugador(String nombre) {
         this.nombre = nombre;
     }
 
@@ -18,3 +16,5 @@ public class Jugador {
         this.nombre = nombre;
     }
 }
+
+
