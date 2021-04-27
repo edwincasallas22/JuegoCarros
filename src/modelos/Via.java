@@ -5,7 +5,7 @@ public class Via {
 
     private int posicion;
     private boolean finalizo;
-    private Carro carro;
+    private final Carro carro;
 
     public Via (Carro carro){
         this.carro = carro;
@@ -25,21 +25,12 @@ public class Via {
         return posicion;
     }
 
-    public void setPosicion(int posicion) {
-        this.posicion = posicion;
-    }
-
     public Carro getCarro() {
         return carro;
     }
 
-    public void setCarro(Carro carro) {
-        this.carro = carro;
-    }
-
-    public int avanzar ( int metros){
+    public void avanzar (int metros){
         this.posicion += metros;
-        return this.posicion;
     }
 
 }

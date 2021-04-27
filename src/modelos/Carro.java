@@ -7,10 +7,6 @@ public class Carro {
         return conductor;
     }
 
-    public void setConductor(Jugador conductor) {
-        this.conductor = conductor;
-    }
-
     public Carro(Jugador conductor) {
         this.conductor = conductor;
     }

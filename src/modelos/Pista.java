@@ -2,8 +2,8 @@ package modelos;
 
 public class Pista {
 
-    private int limiteDistancia;
-    private Via[] carriles;
+    private final int limiteDistancia;
+    private final Via[] carriles;
 
     public Pista(int limiteDistancia, int carriles) {
         this.limiteDistancia = limiteDistancia * 1000;
@@ -14,23 +14,15 @@ public class Pista {
         return limiteDistancia;
     }
 
-    public void setLimiteDistancia(int limiteDistancia) {
-        this.limiteDistancia = limiteDistancia;
-    }
-
     public Via[] getVias() {
         return carriles;
-    }
-
-    public void setVia(Via[] carriles) {
-        this.carriles = carriles;
     }
 
     public void agregarVia(Via carril, int numeroVia) {
         this.carriles[numeroVia] = carril;
     }
 
-    public int avanzarVia(int numeroVia, int metros) {
-        return this.carriles[numeroVia].avanzar(metros);
+    public void avanzarVia(int numeroVia, int metros) {
+        this.carriles[numeroVia].avanzar(metros);
     }
 }
